@@ -3,6 +3,7 @@
 	"version": "1.0.1",
 	"description": "Lightweight Sentiment Analysis Client.",
 	"main": "./dist/index.js",
+	"homepage": "https://isabelle.ai",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/isabelle-ai/js-client.git"
