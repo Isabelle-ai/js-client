@@ -9,7 +9,7 @@ export default class Isabelle {
 
 	async sentiment() {
 		try {
-			if (!this.text || !this.text.length) {
+			if (!this.text || !this.text.length === 0) {
 				throw new Error('Invalid text. Please pass text greater than 0 characters.');
 			}
 

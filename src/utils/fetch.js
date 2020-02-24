@@ -13,7 +13,7 @@ export default class Fetch {
 		this.fetch = fetch;
 	}
 
-	async post({ text }) {
+	async sentiment({ text }) {
 		try {
 			const { status, data } = await this.fetch.request({
 				method: 'POST',
