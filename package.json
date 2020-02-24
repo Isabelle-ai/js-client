@@ -1,9 +1,9 @@
 {
 	"name": "@isabelle-ai/js-client",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Lightweight Sentiment Analysis Client.",
 	"main": "./dist/index.js",
-	"homepage": "https://isabelle.ai",
+	"homepage": "https://github.com/nparsons08/isabelle-js-client#readme",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/isabelle-ai/js-client.git"
@@ -49,7 +49,6 @@
 	"bugs": {
 		"url": "https://github.com/nparsons08/isabelle-js-client/issues"
 	},
-	"homepage": "https://github.com/nparsons08/isabelle-js-client#readme",
 	"directories": {
 		"example": "examples"
 	}
