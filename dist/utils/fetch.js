@@ -13,42 +13,31 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 class Fetch {
   constructor({
-    twilioServiceSid,
-    twilioAccountSid,
-    twilioAuthToken
+    key
   }) {
     const fetch = _axios.default.create({
-      baseURL: `https://verify.twilio.com/v2/Services/${twilioServiceSid}/`,
-      auth: {
-        username: twilioAccountSid,
-        password: twilioAuthToken
+      baseURL: `https://api.isabelle.io/sentiment`,
+      headers: {
+        Authorization: `Bearer ${key}`
       }
     });
 
     this.fetch = fetch;
   }
 
-  async post({
-    path,
-    payload
+  async sentiment({
+    text
   }) {
     try {
-      const obj = {
-        To: payload.phone,
-        Channel: 'sms'
-      };
-
-      if ('code' in payload) {
-        obj['Code'] = payload.code;
-      }
-
       const {
         status,
         data
       } = await this.fetch.request({
         method: 'POST',
-        url: path,
-        data: _querystring.default.stringify(obj)
+        url: '/',
+        data: _querystring.default.stringify({
+          text
+        })
       });
       return {
         status,
