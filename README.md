@@ -7,26 +7,24 @@ JS Client for The Worlds Most Powerful Sentiment Analysis API.
 
 ## Example
 
-To send a verification code using, use the `start` method as shown below:
-
 ```javascript
 import Isabelle from '@isabelle-js/js-client';
 
-const auth = new Isabelle({
-	key: 'YOUR_ISABELLE_API_KEY', // required (found in the isabelle.ai console)
+const client = new Isabelle({
+	key: '123ABC',
 });
 
-const sentiment = async () => {
+const extract = async () => {
 	try {
-    // get sentiment of text
-		const sentiment = await sentiment.get({ text: 'I love Isabelle!' });
-    
-    // do something with response
+		const sentiment = await client.sentiment({
+			text: 'I strongly hate apples because they taste horrible!',
+		});
+
 		console.log(sentiment);
 	} catch (error) {
-		console.log(error);
+		console.error(error);
 	}
 };
 
-sentiment();
+extract();
 ```
