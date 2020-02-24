@@ -22,7 +22,9 @@
 		"start": "node dist/index.js",
 		"dev": "npx babel-node src/index.js",
 		"lint": "yarn prettier --write --check --config ./.prettierrc \"**/*.js\" && eslint --fix ./src",
-		"test": "npx babel-node examples/index.js"
+		"test:positive": "npx babel-node examples/positive.js",
+		"test:neutral": "npx babel-node examples/neutral.js",
+		"test:negative": "npx babel-node examples/negative.js"
 	},
 	"husky": {
 		"hooks": {

@@ -1,13 +1,13 @@
 import Isabelle from '../dist';
 
 const client = new Isabelle({
-	key: '123ABC',
+	key: 'YOUR_API_KEY' // found on isabelle.ai
 });
 
 const extract = async () => {
 	try {
 		const sentiment = await client.sentiment({
-			text: 'I love apples!',
+			text: 'I love apples!'
 		});
 
 		console.log(sentiment);
