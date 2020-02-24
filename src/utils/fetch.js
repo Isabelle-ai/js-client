@@ -6,19 +6,19 @@ export default class Fetch {
 		const fetch = axios.create({
 			baseURL: `https://api.isabelle.io/sentiment`,
 			headers: {
-				Authorization: `Bearer ${key}`
-			}
+				Authorization: `Bearer ${key}`,
+			},
 		});
 
 		this.fetch = fetch;
 	}
 
-	async get({ text }) {
+	async post({ text }) {
 		try {
 			const { status, data } = await this.fetch.request({
 				method: 'POST',
 				url: '/',
-				data: qs.stringify({ text })
+				data: qs.stringify({ text }),
 			});
 
 			return { status, data };

@@ -18,7 +18,7 @@ class Isabelle {
     });
   }
 
-  async get({
+  async sentiment({
     text
   }) {
     try {

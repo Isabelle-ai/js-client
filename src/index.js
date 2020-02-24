@@ -8,11 +8,13 @@ export default class Isabelle {
 	async sentiment({ text }) {
 		try {
 			if (!text || !text.length === 0) {
-				throw new Error('Invalid text. Please pass text greater than 0 characters.');
+				throw new Error(
+					'Invalid text. Please pass text greater than 0 characters.'
+				);
 			}
 
 			const response = await this.fetch.post({
-				text
+				text,
 			});
 
 			return { code: 200, data: response };

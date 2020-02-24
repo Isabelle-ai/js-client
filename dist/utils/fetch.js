@@ -25,7 +25,7 @@ class Fetch {
     this.fetch = fetch;
   }
 
-  async sentiment({
+  async post({
     text
   }) {
     try {
