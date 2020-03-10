@@ -5,7 +5,7 @@
 ![Open Issues](https://img.shields.io/github/issues-raw/isabelle-ai/js-client)
 ![Version](https://img.shields.io/npm/v/@isabele-ai/js-client)
 
-JS Client for The Worlds Most Powerful Sentiment Analysis API.
+JavaScript / Node.js Client for The Worlds Most Powerful Sentiment Analysis API.
 
 ## Example
 
