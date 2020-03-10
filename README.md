@@ -1,7 +1,9 @@
+![](https://i.imgur.com/AwHkale.png)
+
 ![Dependency Status](https://img.shields.io/david/isabelle-ai/js-client)
 ![Dependency Size](https://img.shields.io/github/size/isabelle-ai/js-client/dist/index.js)
 ![Open Issues](https://img.shields.io/github/issues-raw/isabelle-ai/js-client)
-![Version](https://img.shields.io/npm/v/js-client)
+![Version](https://img.shields.io/npm/v/@isabele-ai/js-client)
 
 JS Client for The Worlds Most Powerful Sentiment Analysis API.
 
@@ -11,7 +13,7 @@ JS Client for The Worlds Most Powerful Sentiment Analysis API.
 import Isabelle from '@isabelle-js/js-client';
 
 const client = new Isabelle({
-	key: '123ABC',
+	key: '9ce4e535-01d1-4f27-ad6f-649a4851c330', // your api key
 });
 
 const extract = async () => {
