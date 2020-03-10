@@ -1,6 +1,6 @@
 {
 	"name": "@isabelle-ai/js-client",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Lightweight Sentiment Analysis Client.",
 	"main": "./dist/index.js",
 	"homepage": "https://github.com/nparsons08/isabelle-js-client#readme",
